@@ -1,0 +1,337 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+     width: 100%;
+    
+}
+
+/* BOTÕES */
+button {
+    width: 80%;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 4px 2px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+img {
+    object-fit: contain;
+}
+
+select:hover {
+    background-color: white;
+    border: 1px solid #4CAF50;
+}
+
+/*Menu*/
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color:#00ccff;
+    font-weight: bolder;
+    z-index: 1;
+}
+nav ul {
+    text-align: center;
+}
+nav li {
+    margin-right: 10%;
+    display: inline-block;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    border-radius: 15px;
+}
+nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 0 0 2px white;
+
+} 
+
+nav .logo {
+    width:100px;
+    height:30%;
+    float: left;
+}
+
+/* MAIN*/
+main {
+    text-align: center;
+    text-decoration: none;
+    padding: 1%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* PRECO */
+
+.preco-atual {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+/*FOOTER*/
+#formas_de_pagamento {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+#rodape{
+    text-align: center;
+}
+
+/* TITULOS */
+header {
+    background-color: white;
+}
+
+.titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 20px white;
+
+    color: rgb(14, 12, 12);
+    font-size: 3vw;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.subtitulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-shadow: 1px 1px 20px white;
+}
+
+/* GRID */
+.produtos-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+/* BOX LISTA PRODUTOS */
+.produtos-container .box-produto {
+    background-color: white;
+    padding: 0%;
+    margin: 0%;
+    width: 95%;
+    
+    text-align: center;
+    border-style: inset;
+    border-color:#333333;
+}
+
+.produtos-container .box-produto .imagem-produto {
+    width: 200px;
+    height: 200px;
+}
+
+.produtos-container .box-produto .preco {
+    font-weight: bold;
+}
+
+/* BOTOES */
+
+.produtos-container .menu-botoes {
+    font-size: medium;
+}
+
+.produtos-container .menu-botoes:hover {
+    background-color: #a0a0a0;
+}
+
+.produtos-container .detalhes-produto {
+    background-color: white;
+    border: 2px solid #555555;
+}
+
+.produtos-container .detalhes-produto:hover {
+    background-color: #999999;
+}
+
+.produtos-container .adicionar-carrinho {
+    background-color: white;
+    color: black;
+    border: 2px solid #FFFF99;
+}
+
+.produtos-container .adicionar-carrinho:hover {
+    background-color:#FFFF99;
+}
+.comprar-produto {
+    border: 2px solid #33CCFF;
+    background-color: white;
+}
+
+.comprar-produto:hover {
+    background-color: #33CCFF;
+}
+
+.detalhes-produto:hover {
+    background-color: #ffffff;
+}
+
+.adicionar-carrinho {
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+button:hover {
+    background-color: #c2c2c2;
+}
+
+select {
+    width: 200px;
+    border: none;
+    color: black;
+    border: 1px solid #4CAF50;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 12px;
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+/* DETALHES PRODUTO HTML*/
+.container-main {
+    display: grid;
+    grid-template-areas: 'coletania-imagens imagem detalhes';
+    background-color: white;
+}
+
+
+/* IMAGEM */
+.container-imagem {
+    grid-area: imagem;
+    grid-column: 2 / 3;
+    width: 700px;
+}
+
+.container-imagem img {
+    min-width: 50%;
+    min-width: 50%;
+    max-width: 400px;
+    max-width: 400px;
+    object-fit: contain;
+}
+
+/* DETALHES */
+.container-detalhes {
+    grid-area: detalhes;
+    grid-column: 3 / 3;
+    
+}
+
+.container-detalhes .titulo-produto {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container-detalhes section {
+    margin-right: 5%;
+    padding-bottom: 10px;
+    float: right;
+    background-color: #f1f1f1;
+    border: 1px dotted #333;
+    width: 400px;
+}
+
+.container-detalhes section p {
+    text-align: start;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.descricao-produto {
+    margin: 2%;
+    padding: 10px;
+    text-align: left;
+    background-color: white;
+}
+
+/* LOJAS HTML */
+
+.box-loja{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #00ccff;
+    padding: 1px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.loja .box-loja {
+    width: 85%;
+    text-align: center;
+}
+.loja{
+display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px
+}
+
+/* CONTATOS HTML */
+
+.contato-container {
+    grid-gap: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    width: 40%;
+    margin-left: 30%;
+    border: 1px dashed black;
+
+    
+}
+
+.contato-container input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px 0 10px 10px;
+    width: 80%;
+}
+
+.contato-container textarea {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 100px;
+    padding: 10px 0 10px 10px;
+    width: 80%;
+    resize: vertical
+}
+
+.contato-container p {
+    padding-top: 15px;
+    margin: 1%;
+}
+
+.contato-container button {
+    background-color: #c7c7c7;
+    color: black;
+
+    cursor: pointer;
+    width: 80%;
+}
+
+.contato-container button:hover {
+    background-color: #45a049;
+    color: white;
+    border-radius: 4px;
+}
